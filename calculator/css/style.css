@@ -1,58 +1,89 @@
-//
-body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: gainsboro;
-    font-weight: 120;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  font-weight: 120;
+}
+
+.calculator-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 80px);
 }
 
 table {
-    width: 300px;
-    margin: 50px auto;
-    background: rgb(147, 150, 18);
-    border: none;
-    border-radius: 10px;
-    padding: 0px 20px 20px;
+  width: 300px;
+  margin: 50px auto;
+  background: #00cecb;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 20px 20px;
 }
 
 .heading {
-    color: grey;
-    font-size: 120%;
-    text-align: center;
+  color: #fff;
+  font-size: 120%;
+  padding: 15px 0px;
+  text-align: center;
 }
 
-#input, #answer {
-    width: 280px;
-    height: 60px;
-    font-size: 200%;
-    text-align: right;
-    border: none;
+#input,
+#answer {
+  width: 270px;
+  padding-right: 10px;
+  height: 60px;
+  font-size: 200%;
+  text-align: right;
+  border: none;
 }
 #input {
-    border-radius: 5px 5px 0px 0px;
-    box-shadow: 2px 2px 2px black;
-    color: #1e1e1e;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 2px 2px 2px black;
+  color: #1e1e1e;
 }
 
 #answer {
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 2px 2px 2px black;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 2px 2px 2px black;
 }
 
-input[type = button] {
-    box-shadow: 2px 2px 2px black;
-    height: 50px;
-    width: 60px;
-    color: green;
-    font-size: 130%;
-    background: white;
-    margin: 3px;
-    border:5px solid black;
+input[type="button"] {
+  height: 50px;
+  width: 60px;
+  color: #000;
+  font-size: 130%;
+  background: white;
+  margin: 3px;
+  border: 3px solid white;
 }
 
-input[type = button]:hover {
-    background: #fffca4;
-    cursor: pointer;
+input[type="button"]:hover {
+  background: lightslategray;
+  color: #fff;
+  cursor: pointer;
+  border: 3px solid lightslategray;
 }
 
+.gap {
+  margin-top: 6px;
+}
 
+footer {
+  height: 80px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  background: #393939;
+  justify-content: center;
+}
 
+footer a {
+  color: #00cecb;
+}
