@@ -88,7 +88,22 @@ function backspace() {
 
 function compute() {
   var input = document.getElementById("input");
+  var getLastChar = input.value.toString().slice(-1);
+  if (
+    getLastChar.includes("+") ||
+    getLastChar.includes("-") ||
+    getLastChar.includes("*") ||
+    getLastChar.includes("/") ||
+    getLastChar.includes(".") ||
+    getLastChar.includes("(") ||
+    getLastChar.includes(")")
+  ) {
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").value = "Error";
+    return;
+  }
   ans = +eval(input.value).toFixed(11);
+  document.getElementById("answer").style.color = "green";
   document.getElementById("answer").value = "= " + ans;
 }
 
