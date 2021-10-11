@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+
+.hide-container {
+  display: none;
+}
+
+.header {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-family: "Permanent Marker";
+}
+
+.enter-players {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.input-field {
+  width: 250px;
+  outline: none;
+  font-size: 18px;
+  padding: 8px 8px;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+  border: 2px solid #000;
+}
+
+.input-field:focus {
+  border: 2px solid #00cecb;
+}
+
+.submit-btn {
+  width: 250px;
+  color: #fff;
+  padding: 8px 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid #00cecb;
+  background-color: #00cecb;
+}
+
+.submit-btn:active,
+.submit-btn:focus {
+  outline: none;
+  border: 2px solid #00cecb;
+}
+
+.board___player-turn {
+  text-align: center;
+  margin: 10px 0 10px;
+  height: 54px;
+}
+
+.name--style {
+  font-size: 22px;
+}
+
+.board__container {
+  width: 600px;
+  height: 600px;
+  background-color: #9cfffe;
+  margin: 0 auto;
+  font-size: 0;
+  border: 2px solid #000;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.board__cell {
+  width: calc(100% / 2.9999);
+  display: inline-block;
+  font-size: 40px;
+  height: calc(100% / 2.99);
+  text-align: center;
+  border: 2px solid #000;
+  vertical-align: top;
+  font-family: "Permanent Marker";
+}
+
+.board__cell--winner {
+  background-color: #00cecb;
+}
+
+.letter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Permanent Marker";
+}
+
+/* WINNER CONTAINER */
+.reset {
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+.reset--hidden {
+  display: none;
+}
+
+.replay-btn {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  outline: none;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 12px;
+  word-spacing: 3px;
+  background-color: #fff;
+}
+
+.replay-btn:hover,
+.replay-btn:active {
+  outline: none;
+  color: #fff;
+  background-color: #000;
+}
+
+.congratulations {
+  font-size: 24px;
+}
+
+.u-r-winner {
+  font-size: 18px;
+  height: 18px;
+  line-height: 18px;
+  margin: 2px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .board__cell {
+    font-size: 16px;
+  }
+
+  .board__container {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .board__container {
+    width: 310px;
+    height: 310px;
+  }
+}
+
+footer {
+  height: 80px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 10px 0px;
+  text-align: center;
+  align-items: center;
+  background: #393939;
+  justify-content: center;
+}
+
+footer a {
+  color: #00cecb;
+}
