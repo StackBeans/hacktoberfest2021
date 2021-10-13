@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face{
     font-family: digital-7;
     src: url(fonts/digital-7.ttf);
@@ -70,3 +71,77 @@ h2
   letter-spacing: 2px;
   margin: 200px 0 0 ;
 }
+=======
+@font-face {
+  font-family: digital-7;
+  src: url(fonts/digital-7.ttf);
+}
+
+body {
+  color: #dad6d6;
+  text-align: center;
+  font-family: digital-7;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/clock.svg);
+}
+
+.container {
+  min-width: 20%;
+  max-width: 100%;
+  margin: 125px auto 100px;
+}
+
+#heading {
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#timer {
+  font-size: 2.5em;
+}
+
+#start {
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  background: #48633b;
+  margin: 20px auto 0px;
+  padding: 16px 40px 16px;
+  border: solid 2px #35492c;
+}
+
+#stop {
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  margin: 20px 5px auto;
+  background: #721329;
+  padding: 16px 40px 16px;
+  border: solid 2px #590f20;
+}
+
+#reset {
+  color: #fff;
+  cursor: pointer;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  background: #564e58;
+  padding: 16px 40px 16px;
+  border: solid 2px #3e383f;
+}
+
+h2 {
+  font-size: 46px;
+  margin: 200px 0 0;
+  letter-spacing: 2px;
+}
+>>>>>>> 616b68e05cac2f86e04670c2890886f1aed81931
