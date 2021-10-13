@@ -1,27 +1,12 @@
-<<<<<<< HEAD
-# HacktoberFest 2021
+<img width="2295" alt="logo" src="https://user-images.githubusercontent.com/72811435/135575798-105b3530-6325-46d6-9935-76c41c683f04.png">
 
-### for contribution please create PRs and add a label of "Hacktoberfest"
+Hacktoberfest, in its 8th year, is a month-long celebration of open source software run by DigitalOcean. During the month of October, we invite you to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects. You can do this in a variety of ways:
 
-[Open JS Calculator](https://stackbeans.github.io/hacktoberfest2021/calculator/)
+* Prepare and share your project for collaboration
+* Contribute to the betterment of a project via pull requests
+* Organize an event
+* Mentor others
+* Donate directly to open source projects
 
-[Open JS StopWatch](https://stackbeans.github.io/hacktoberfest2021/stopwatch/)
-
-[Open JS JunkArtifactsRemover](https://stackbeans.github.io/hacktoberfest2021/JunkArtifactsRemover/)
-=======
-# HacktoberFest 2021
-
-### for contribution please create PRs and add a label of "Hacktoberfest"
-
-[Open JS Calculator](https://stackbeans.github.io/hacktoberfest2021/calculator/)
-
-[Open JS StopWatch](https://stackbeans.github.io/hacktoberfest2021/stopwatch/)
-
-[Open JS JunkArtifactsRemover](https://stackbeans.github.io/hacktoberfest2021/JunkArtifactsRemover/)
-
-[Spin Loaders](https://stackbeans.github.io/hacktoberfest2021/AnimatedLoaders/)
-
-[Open JS Weather App](https://stackbeans.github.io/hacktoberfest2021/Weather_App/index.html/)
-
-[Open JS Tic Tac Toe](https://stackbeans.github.io/hacktoberfest2021/TicTacToe/)
->>>>>>> 616b68e05cac2f86e04670c2890886f1aed81931
+<br>
+<br>
