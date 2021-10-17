@@ -6,4 +6,5 @@ Hacktoberfest 2021, in its 8th year, is a month-long celebration of open source 
 - Contribute to the betterment of a project via pull requests
 - Organize an event
 - Mentor others
+- Open source is changing the world
 - Donate directly to open source projects
