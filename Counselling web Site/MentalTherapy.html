@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="text1.css">
+	<link rel="stylesheet" href="Footer.css">
+  <link rel="stylesheet" href="Navigation.css">
+  <link rel="stylesheet" href="PatientPage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<title>Mental Therapy</title>
+</head>
+<body>
+<header>
+
+<!-- navbar-->
+<nav class="navbar navbar-expand-md navbar-dark  fixed-top navex">
+  <div class="container">
+    <a class="navbar-brand" href="#">CounsaXR</a>
+    <button class="navbar-toggler" type="button" id="btn1" onclick="openFunction()">
+     <img id="toga" src="images/toggle.gif"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end">
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#"><i class="fas fa-address-card xx1 pr-3"></i></a></li>
+        <li class="nav-item">
+          <a class="icon nav-link ms-3" onclick="toggleNotifi()" ><i class="fas fa-bell xx1 pr-3" ></i><span>4</span></a></li>
+          <div class="notifi-box" id="box">
+          <div class="notifi-item">
+            <img src="images/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Dr.Maria Papoulias</h4>
+              <p>Meeting ID: @phy12Hv Time: 6pm(UTC).</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/phy-1.png" alt="img">
+            <div class="text">
+              <h4>Dr.Paul Jozsef</h4>
+              <p>Not recieved link! Contact right me now.. </p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/phy-2.png" alt="img">
+            <div class="text">
+              <h4>Dr.Elias Abdurrahman</h4>
+              <p>Accepted your meeting.</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/mental-1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/mental-2.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+        </div>
+
+        <li class="nav-item">
+          <a class="icon nav-link ms-3" onclick="toggleMsg()" ><i class="fas fa-envelope xx1 pr-3" ></i><span>5</span></a></li>
+          <div class="notifi-box" id="box2">
+          <div class="notifi-item">
+            <img src="images/3.jpg" alt="img">
+            <div class="text">
+              <h4>Dr.Sahan Weerapura</h4>
+              <p>At which time you free?</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/2.jpg" alt="img">
+            <div class="text">
+              <h4>Dr.Hatharasinghe</h4>
+              <p>Meet me at 7pm today.</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/1.jpg" alt="img">
+            <div class="text">
+              <h4>Dr.Vindya Perera</h4>
+              <p>Come with your scan like XR and radiology.</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/mental-2.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="images/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>@lorem ipsum dolor sit amet</p>
+            </div> 
+          </div>
+        </div>
+        
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#"><i class="fad fa-sign-out xx1 pr-3"></i></a></li>
+      </ul>  
+  </div>
+</nav>
+
+  <!--toogle navbar-->
+	<div class="sidemenu" id="menu">     
+          <a  href="#">Home</a></li>        
+          <a  href="#">Notifications</a></li>        
+          <a  href="#">Messages</a></li>       
+          <a  href="#">SignOut</a></li>
+          <a  class="closebtn" onclick="closeFunction()">&times;</a>
+  </div>
+</header>
+<!--navbar-->
+
+<section class="pt-1">
+  <h1 class="wc1 text-center pb-3 "></h1>
+</section>
+
+<!--search button!-->
+<section>  
+   <div class="search">
+    <form >
+     <div class="pb-3">
+          <input type="text" class="search-field name" style="border-style:groove;" placeholder="search by Doctor">
+          <input type="text" class="search-field disease" style="border-style:groove;" placeholder="search by Disease">
+          <select style="border-style:groove;">
+            <option disabled selected>Location</option>
+            <option>Colombo</option>
+            <option>Kandy</option>
+            <option>Galle</option>
+            <option>Ampara</option>
+            <option>Anuradhapura</option>
+            <option>Badulla</option>
+            <option>Batticaloa</option>
+            <option>Gampaha</option>
+            <option>Hambantota</option>
+            <option>Jaffna</option>
+            <option>Kalutara</option>
+            <option>Kegalle</option>
+            <option>Kilinochchi</option>
+            <option>Kurunegala</option>
+            <option>Mannar</option>
+            <option>Matale</option>
+            <option>Matara</option>
+            <option>Monaragala</option>
+            <option>Mulativu</option>
+            <option>NuwaraEliya</option>
+            <option>Polonnaruwa</option>
+            <option>Puttalam</option>
+            <option>Ratnpura</option>
+            <option>Trincomalee</option>
+            <option>Vavuniya</option>
+
+          </select>
+          <button style="border-style:groove"; class="search-btn" type="button">search</button>
+        </div>
+      
+    </form>
+  </div>
+
+    </form>
+  </div>
+  </section>
+
+<section>
+  <div class="image">
+    <img src="images/mental.jpg" class="d-block w-100">
+  </div>  
+</section>
+
+<section>
+  <div>
+    <h4 class="mt-5 text-center">Meet our Mental Therapists all by time!...</h4>
+  </div>
+</section>
+<!--Card_gigs-->
+<section>
+<div class="container-fluid mt-5 row bgn">
+  <!--card1-->
+
+  <div class="col-md-3 col-sm-6 col-lg-2">
+      <a href="" data-toggle="modal" data-target="#exampleModalCenter1">
+      <div class="card">
+        <img class="card-img-top" src="images/mental-1.jpg"></a>
+        <div class="card-body">
+          <h4 class="card-title text-center">Samantha Spafford</h4>
+        </div>
+      </div>
+        <!--modal-->
+      <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Samantha Spafford</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Mess">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <img src="images/mental-1.jpg" style="border-radius: 100px;">
+          <div>
+            <p class="ps-4">Hi and thanks for checking out my profile!
+
+Its really important to choose the practitioner and the approach that is a 'good fit' with your personality and goals. My methods are incredibly practical, in our sessions you can expect for us to be discussing your goals, measuring progress and together overcoming any hurdles that come up along the way.
+
+Some people have a very clear idea about what they would like to work on, while others have a vague sense that things could be better without knowing exactly where to start, both of which are absolutely fine. Clarifying what is important to you and which direction you would like to be moving is often helpful in itself. </p>
+          </div>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--end of card1-->
+<!--card2-->
+  <div class="col-md-3 col-sm-6 col-lg-2">
+      <a href="" data-toggle="modal" data-target="#exampleModalCenter2">
+      <div class="card">
+        <img class="card-img-top" src="images/mental-2.jpeg"></a>
+        <div class="card-body">
+          <h4 class="card-title text-center">Carol Schultz</h4>
+        </div>
+      </div>
+        <!--modal-->
+      <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Carol Schultz</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Mess">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <img src="images/mental-2.jpeg" style="border-radius: 100px;">
+          <div>
+            <p class="ps-4">Is making positive change in your life a daily struggle? I help everyday people who struggle with day-to-day life to make positive changes. You may need a one-off session for some helpful guidance on something small or you may want long term help to come to terms with a difficult situation. Either way, where I can help, I always do. <br>
+            I focus our counseling services on offering help to people in a way that meets their personal needs. I make sure that every person I help can access online counseling in a way that makes them feel comfortable, empowered and supported.</p>
+          </div>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--end of card2-->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+</section>
+
+
+<!-- Footer-->
+<section id="footer1">
+<footer class="bg-grey py-5">
+<div class="container">
+   <div class="row">
+      <div class="col-md-6 col-sm-12">
+         <div class="row">
+            <div class="col-md-6 ">
+               <div class="logo-part">
+                  <img src="" class="w-50 logo-footer" ><h4 class="pt-3" style="font-family:'babapro font',sans-serif;">CounsaXR</h4>
+                  <p class="pt-5">Future of Online Surveillence.</p>
+                  <p class="pb-3">10+ k followers with high ratings.</p>
+               </div>
+            </div>
+            <div class="col-md-6 px-4">
+               <h6> About Us</h6>
+               <p>Contact- 047 4 549 754</p>
+               <p>Fax- 047 4 549 753</p>
+               <p>Email- counsaxr@info.lk</p>
+               <a href="#" class="btn-footer"> Team </a><br>
+               <a href="#" class="btn-footer"> Explore Now</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6 ">
+         <div class="row">
+            <div class="col-md-6 px-4">
+               <h6> Qucik Link</h6>
+               <div class="row ">
+                  <div class="col-md-6">
+                     <ul>
+                        <li> <a href="#"> Home</a> </li>
+                        <li> <a href="#"> Notifications</a> </li>
+                        <li> <a href="#"> Messages</a> </li>
+                        <li> <a href="#"> SignOut</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 ">
+               <h6> Connect via</h6>
+               <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+               </div>
+           		
+            </div><p class="text-center pt-3" style="font-size: 15px;">Copyright © 2021, All Right Reserved CounsaXR.</p>
+         </div>
+      </div>
+   </div>
+</div>
+</footer>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="Notification.js"></script>
+<script src="Message.js"></script>
+</body>
+</html>
