@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="Footer.css">
+	<link rel="stylesheet" href="PatientPage.css">
+  <link rel="stylesheet" href="Navigation.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<title>Physical THerapy</title>
+</head>
+<body>
+<header>
+
+!-- navbar-->
+<nav class="navbar navbar-expand-md navbar-dark  fixed-top navex">
+  <div class="container">
+    <a class="navbar-brand" href="#">CounsaXR</a>
+    <button class="navbar-toggler" type="button" id="btn1" onclick="openFunction()">
+     <img id="toga" src="images/toggle.gif"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end">
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#"><i class="fas fa-address-card xx1 pr-3"></i></a></li>
+        <li class="nav-item">
+          <a class="icon nav-link ms-3" onclick="toggleNotifi()" ><i class="fas fa-bell xx1 pr-3" ></i><span>2</span></a></li>
+          <div class="notifi-box" id="box">
+
+          <a href="#" style="font-style: none;text-decoration: none;">
+          <div class="notifi-item">
+            <img src="images/phy-1.png" alt="img">
+            <div class="text">
+              <h4>Dr.Maria Papoulias</h4>
+              <p>Not recieved link! Contact right me now.. </p>
+            </div> 
+          </div></a>
+          <a href="#" style="font-style: none;text-decoration: none;">
+          <div class="notifi-item">
+            <img src="images/phy-2.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>Meeting ID: @phy12Hv Time: 6pm(UTC).</p>
+            </div> 
+          </div></a>
+      </div>
+
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#"><i class="fas fa-envelope xx1 pr-3"></i></a></li>
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#"><i class="fad fa-sign-out xx1 pr-3"></i></a></li>
+      </ul>  
+  </div>
+</nav>
+
+  <!--toogle navbar-->
+	<div class="sidemenu" id="menu">     
+          <a  href="#">Home</a></li>        
+          <a  href="#">Notifications</a></li>        
+          <a  href="#">Messages</a></li>       
+          <a  href="#">SignOut</a></li>
+          <a  class="closebtn" onclick="closeFunction()">&times;</a>
+  </div>
+</header>
+<!--navbar-->
+
+<section>
+  <div class="search"><div class="x"></div></div>
+</section>
+
+<!--search button!-->
+<section>  
+   <div class="search">
+    <form >
+     <div class="pb-3">
+          <input type="text" class="search-field name" style="border-style:groove;" placeholder="search by Doctor">
+          <input type="text" class="search-field disease" style="border-style:groove;" placeholder="search by Disease">
+          <select style="border-style:groove;">
+            <option disabled selected>Location</option>
+            <option>Colombo</option>
+            <option>Kandy</option>
+            <option>Galle</option>
+            <option>Ampara</option>
+            <option>Anuradhapura</option>
+            <option>Badulla</option>
+            <option>Batticaloa</option>
+            <option>Gampaha</option>
+            <option>Hambantota</option>
+            <option>Jaffna</option>
+            <option>Kalutara</option>
+            <option>Kegalle</option>
+            <option>Kilinochchi</option>
+            <option>Kurunegala</option>
+            <option>Mannar</option>
+            <option>Matale</option>
+            <option>Matara</option>
+            <option>Monaragala</option>
+            <option>Mulativu</option>
+            <option>NuwaraEliya</option>
+            <option>Polonnaruwa</option>
+            <option>Puttalam</option>
+            <option>Ratnpura</option>
+            <option>Trincomalee</option>
+            <option>Vavuniya</option>
+
+          </select>
+          <button style="border-style:groove"; class="search-btn" type="button">search</button>
+        </div>
+      
+    </form>
+  </div>
+
+    </form>
+  </div>
+  </section>
+
+<section>
+  <div class="image">
+    <img  src="images/layer0.png" class="d-block w-100">
+  </div>  
+</section>
+
+<section>
+  <div class="container pt-5">
+    <hr id="hr2"><br>
+    <h4 class="mt-3 text-center">Meet our Physical Therapists all by time!...</h4>
+  </div>
+</section>
+
+<!--Card_gigs-->
+<section>
+<div class="container-fluid mt-5 bgn row">
+  <!--card1-->
+
+  <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+      <a href="" data-toggle="modal" data-target="#exampleModalCenter1">
+      <div class="card" style="max-height: 1000px;">
+        <img class="center" style="border-radius: 80px;" src="images/phy-1.png"></a>
+        <hr id="hr1">
+        <div class="card-body">
+          <h5 class="card-title text-center">Dr.Maria Papoulias</h5>
+          <p class="card-text">Nice to meet you!. Contact me at any time to conduct a session on your opinion in physio Therapy. </p>
+        </div>
+        <div class="container">
+          <i class="fas fa-star"></i>
+          <span class="pl-1">5.0</span><div class="modal-footer"><button type="button" class="btn btn-primary">Message</button></div></div>
+
+      </div>
+
+        <!--modal-->
+      <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="chat-popup" id="myForm">
+  <form action="" class="form-container">
+    <h1>Chat</h1>
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancle</button>
+  </form>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<!--end of card1-->
+<!--card2-->
+  <div class=" col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+      <a href="" data-toggle="modal" data-target="#exampleModalCenter2">
+      <div class="card">
+        <img class="center" style="border-radius: 80px;" src="images/phy-2.png"></a>
+        <hr id="hr1">
+        <div class="card-body">
+          <h5 class="card-title text-center">Dr.Paul Jozsef</h5>
+          <p class="card-text">Experience of 10+ years work in govermet hopsitals.I work with individuals to help them.Let's meet . </p>
+        </div>
+        <div class="container"><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i><span class="pl-1">5.0</span><div class="modal-footer"><button type="button" class="btn btn-primary">Message</button></div></div>
+      </div>
+        <!--modal-->
+      <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Dr. Paul Jozsef</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Mess">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <img src="images/phy-2.png" style="border-radius: 100px;">
+          <div>
+            <p class="ps-4">I work with individuals to help them identify and tackle the obstacles blocking them from enjoying a healthier, happier and more fulfilling life.</p>
+          </div>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--end of card2-->
+<nav aria-label="Page navigation example" class="mt-3">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+</section>
+
+
+<!-- Footer-->
+<section id="footer1">
+<footer class="bg-grey py-5">
+<div class="container">
+   <div class="row">
+      <div class="col-md-6 col-sm-12">
+         <div class="row">
+            <div class="col-md-6 ">
+               <div class="logo-part">
+                  <img src="" class="w-50 logo-footer" ><h4 class="pt-3" style="font-family:'babapro font',sans-serif;">CounsaXR</h4>
+                  <p class="pt-5">Future of Online Surveillence.</p>
+                  <p class="pb-3">10+ k followers with high ratings.</p>
+               </div>
+            </div>
+            <div class="col-md-6 px-4">
+               <h6> About Us</h6>
+               <p>Contact- 047 4 549 754</p>
+               <p>Fax- 047 4 549 753</p>
+               <p>Email- counsaxr@info.lk</p>
+               <a href="#" class="btn-footer"> Team </a><br>
+               <a href="#" class="btn-footer"> Explore Now</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6 ">
+         <div class="row">
+            <div class="col-md-6 px-4">
+               <h6> Qucik Link</h6>
+               <div class="row ">
+                  <div class="col-md-6">
+                     <ul>
+                        <li> <a href="#"> Home</a> </li>
+                        <li> <a href="#"> Notifications</a> </li>
+                        <li> <a href="#"> Messages</a> </li>
+                        <li> <a href="#"> SignOut</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 ">
+               <h6> Connect via</h6>
+               <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+               </div>
+           		
+            </div><p class="text-center pt-3" style="font-size: 15px;">Copyright © 2021, All Right Reserved CounsaXR.</p>
+         </div>
+      </div>
+   </div>
+</div>
+</footer>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="LogoText.js"></script>
+<script src="NotificationMessage.js"></script>
+</body>
+</html>
